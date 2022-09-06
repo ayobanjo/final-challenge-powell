@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::root {
+  --clr-primary-100: #6f737f;
+  --clr-primary-200: #3b4050;
+  --clr-primary-400: #2e323f;
+
+  --clr-neutral-100: #ffffff;
+  --clr-nuetral-900: #000000;
+
+  /* fonts */
+  --ff-primary: "Monserrat Regular", sans-serif;
+  --ff-accent: "Oswald Bold", serif;
+}
