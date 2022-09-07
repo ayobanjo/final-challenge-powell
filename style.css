@@ -13,6 +13,31 @@
   --clr-nuetral-900: #000000;
 
   /* fonts */
-  --ff-primary: "Monserrat Regular", sans-serif;
-  --ff-accent: "Oswald Bold", serif;
+  --ff-primary-400: "Montserrat", sans-serif;
+  --ff-primary-500: "Montserrat", sans-serif;
+  --ff-accent: "Oswald", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+a {
+  font-family: var(--ff-accent);
+}
+
+p {
+  font-family: var(--ff-primary-400);
 }
