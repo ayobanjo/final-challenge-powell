@@ -1,27 +1,27 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-::root {
+:root {
   --clr-primary-100: #6f737f;
   --clr-primary-200: #3b4050;
-  --clr-primary-400: #2e323f;
+  --clr-primary-400: #222737;
+  --clr-secondary-200: #a59678;
 
   --clr-neutral-100: #ffffff;
   --clr-nuetral-900: #000000;
 
   /* fonts */
   --ff-primary-400: "Montserrat", sans-serif;
-  --ff-primary-500: "Montserrat", sans-serif;
   --ff-accent: "Oswald", sans-serif;
 }
 
-body {
-  margin: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   padding: 0;
-  /* font-family: "Montserrat", sans-serif; */
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff-primary-400);
 }
 
 img {
@@ -33,19 +33,41 @@ h1,
 h2,
 h3,
 h4,
-button,
-a {
+button {
   font-family: var(--ff-accent);
 }
 
 p {
   font-family: var(--ff-primary-400);
 }
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--clr-neutral-100);
+  font-weight: 900;
+  background-color: var(--clr-secondary-200);
+  padding: 0.75em 2em;
+  border-radius: 100px;
+}
 
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
 .header {
-  background: #136c72;
+  background-color: var(--clr-primary-400);
   padding: 1em 0;
   text-align: center;
+}
+.hero {
+  background-color: var(--clr-primary-200);
+}
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .nav {
@@ -59,7 +81,7 @@ p {
   height: 3em;
   padding: 0em;
   border-radius: 50%;
-  background: #072a2d;
+  background: var(--clr-nuetral-900);
   color: white;
   transition: opacity 250ms ease;
 
@@ -146,6 +168,10 @@ p {
 
 .logo {
   height: 30px;
+  display: flex;
+  justify-content: center;
+
+  /* come back to this */
 }
 
 @media (min-width: 800px) {
