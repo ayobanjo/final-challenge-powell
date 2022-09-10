@@ -61,6 +61,7 @@ h4 {
   border: none;
   margin-top: 20px;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -194,6 +195,9 @@ h4 {
   line-height: 1.2;
   margin-bottom: 0.8em;
 }
+.span {
+  color: var(--clr-secondary-200);
+}
 .small__text p {
   font-size: 24px;
 }
@@ -233,6 +237,49 @@ h4 {
 .right__col h3 {
   color: var(--clr-neutral-100);
   font-size: 30px;
+}
+
+.footer {
+  background-color: var(--clr-primary-200);
+  padding: 2rem 0;
+}
+
+.footer__split {
+  margin: 1.5em 0;
+}
+
+.footer__split h1 {
+  font-size: 24px;
+}
+
+.footer__split h4 {
+  font-size: 21px;
+  margin: 15px 0;
+}
+.footer__split p,
+a {
+  font-size: 16px;
+  color: var(--clr-neutral-100);
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__item {
+  margin-top: 0.9em;
+  font-size: 16px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer__link:hover,
+.footer__link:focus {
+  opacity: 0.75;
 }
 
 @media (min-width: 800px) {
